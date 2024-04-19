@@ -1,4 +1,4 @@
-mport FetchData from "../utils/FetchData";
+import FetchData from "../utils/FetchData";
 import BookComponent from "../components/Book-Elvira";
 import { useState, useEffect } from "react";
 
@@ -17,15 +17,15 @@ const SingleBookPage = () => {
 
     fetchBooks();
   }, []);
-
+//Component + Prop der an Book-Elvira gebunden ist
   return (
     <div>
       <h1>Book Details</h1>
-      <div>
+      {/* <div>
         {books.map((book) => (
-          <BookComponent book={book} /> //Component + Prop der an Book-Elvira gebunden ist
+          <BookComponent book={book} /> 
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

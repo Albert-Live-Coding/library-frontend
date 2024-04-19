@@ -30,11 +30,11 @@ const Cart = () => {
     <div>
       <h1>Your Cart</h1>
       <div style={{ display: "flex" }}>
-        <section>
+      {/*   <section>
           {cartBooks.map((book, index) => (
             <BookComponent key={index} book={book} />
           ))}
-        </section>
+        </section> */}
 
         <section>
           <div>
