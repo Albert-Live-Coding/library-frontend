@@ -20,10 +20,9 @@ const CategoryPage = () => {
 
   return (
     <>
-      <Header />
-      {bookdata.map((book) => {
+      {/* {bookdata.map((book) => {
         <BookElvira book={book} />;
-      })}
+      })} */}
     </>
   );
 };
