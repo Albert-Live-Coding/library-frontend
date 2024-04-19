@@ -1,8 +1,5 @@
 import Header from "./components/Header";
 
-const App = () => {
-
-
 /* import FetchData from './utils/FetchData';
 FetchData().then((data) => console.log(data)); */
 
@@ -13,5 +10,3 @@ export const App = () => {
     </>
   );
 ;
-
-export default App;
