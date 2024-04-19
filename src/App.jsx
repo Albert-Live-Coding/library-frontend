@@ -1,27 +1,14 @@
-// import Header from './components/Header';
-
-// /* import FetchData from './utils/FetchData';
-// FetchData().then((data) => console.log(data)); */
-
-// export const App = () => {
-//   return (
-//     <>
-//       <Header />
-//       <h1>Hello There</h1>
-//     </>
-//   );
-// };
-
-import Header from "./components/Header";
+mport Header from "./components/Header";
 import CategoryPage from "./pages/CategoryPage";
-
-/* import FetchData from './utils/FetchData';
-FetchData().then((data) => console.log(data)); */
+port Header from './components/Header';
+import { Outlet } from 'react-router-dom';
 
 export const App = () => {
   return (
     <>
-      <CategoryPage />
+      <Header />
+      <Outlet />
+
     </>
   );
 };

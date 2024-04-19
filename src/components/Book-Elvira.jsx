@@ -7,10 +7,10 @@ const BookComponent = ({ book }) => {
             <h3>{book.title}</h3>
             <p>{book.author}</p>
             <p>{book.price}</p>
+            <p>{book.description}</p>
         </div>
     </div>
    )
 }
-
-
+//{ book } - prop der von SingleBookPage kommt
 export default BookComponent;
