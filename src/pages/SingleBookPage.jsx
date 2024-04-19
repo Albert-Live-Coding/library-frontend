@@ -1,11 +1,34 @@
-import FetchData from './utils/FetchData';
+mport FetchData from "../utils/FetchData";
+import BookComponent from "../components/Book-Elvira";
+import { useState, useEffect } from "react";
 
-export const SingleBookPage = () => {
+const SingleBookPage = () => {
   const [books, setBooks] = useState([]);
-  const cartBooks = [books[3], books[1], books[2]];
+
+  useEffect(() => {
+    const fetchBooks = async () => {
+      try {
+        const data = await FetchData(); //FETCHDATA hier
+        setBooks(data);
+      } catch (error) {
+        console.error("Error!", error);
+      } //Fehlermeldung
+    };
+
+    fetchBooks();
+  }, []);
+
   return (
-    <div className="about-page">
-      <h1>About Page</h1>
+    <div>
+      <h1>Book Details</h1>
+      <div>
+        {books.map((book) => (
+          <BookComponent book={book} /> //Component + Prop der an Book-Elvira gebunden ist
+        ))}
+      </div>
     </div>
   );
 };
+
+export default SingleBookPage;
+
