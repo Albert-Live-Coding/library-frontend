@@ -1,4 +1,4 @@
-import FetchData from "../utils/FetchData";
+mport FetchData from "../utils/FetchData";
 import BookComponent from "../components/Book-Elvira";
 import { useState, useEffect } from "react";
 
@@ -31,3 +31,4 @@ const SingleBookPage = () => {
 };
 
 export default SingleBookPage;
+
