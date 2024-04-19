@@ -1,7 +1,8 @@
 import { useState } from "react";
-import "../components/LoginForm.css";
 
-function LoginForm() {
+import "../components/FormLogin.css";
+
+function FormLogin() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [emailError, setEmailError] = useState("");
@@ -71,4 +72,4 @@ function LoginForm() {
   );
 }
 
-export default LoginForm;
+export default FormLogin;
